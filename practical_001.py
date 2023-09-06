@@ -17,7 +17,7 @@ def average_marks(l):
          cnt+=1
     avg = sum/cnt
     print("total marks are:",sum )
-    print("the average marks are :{:.2f}".format(avg))
+    return(avg)
 # we write user defined function for calculate the highest score in class.
 def highest_mark(l):
     Max = l[0]
@@ -35,7 +35,8 @@ def lowest_mark(l):
     for j in range(i+1,len(l)):
        if l[j] != -1 and l[j]<Min:
           Min = l[j]
-          return(Min)
+       return(Min)
+          
   # we write user defined function for calculate th how many student absent in test.
 def absent(l):
    cnt = 0 
@@ -55,7 +56,7 @@ def maxFre(l):
             Max = l.count(ele)
             mark = ele
             i +=1
-            return ( mark,Max)
+      return ( mark,Max)
                             
         
 
@@ -65,7 +66,7 @@ noStudent = int(input("enter a number of student: "))
 for i in range(noStudent):
    marks =  int(input("enter a student marks: " +str(i+1)+":"))
    marksInFDS.append(marks)
-highest_mark(marksInFDS)
+
 
 
 bharat = 1
@@ -81,7 +82,7 @@ while bharat ==1:
    # this for choice ...
          choice = int(input("enter your choice : "))
          if choice == 1:
-            print(" average score of the class is = " ,average_marks(marksInFDS))
+            print( "the average marks is :",average_marks(marksInFDS))
            
          elif choice ==2 :
             print("the highest mark is  = ",highest_mark(marksInFDS))
