@@ -50,7 +50,7 @@ def MAX_FRE(l):
             mark = ele
             i +=1
       return ( mark,Max)
-   
+     
 MARKS_IN_FDS = []
 NO_Student = int(input("enter a number of student: "))
 for i in range(NO_Student):
@@ -66,6 +66,7 @@ while KALPESH ==1:
         print("(2). THE HIGHEST SCORE OF CLASS.")
         print("(3). THE LOWEST SCORE OF CLASS.")
         print("(4). THE COUNT OF ABSENT STUDENT.")
+      
         print("(5).  DISPLAY MARK WITH HIGH FREQUENCY.")
         print("(6). exit.")
    # this for choice ...
