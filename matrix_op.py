@@ -40,13 +40,6 @@ def transpose(m1,res,r1,c1):
          res[j][i] = m1[i][j]
     return res     
 
-    
-
-
-
-
-
-
 
 matrix1 = []
 matrix2 =[]
